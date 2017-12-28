@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <!-- navbar header -->
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#web-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="">Jander.es</a>
+    </div> <!-- closes 'navbar-header' -->
+
+    <!-- navbar elements -->
+    <div class="collapse navbar-collapse" id="web-navbar">
+      <ul class="nav navbar-nav">
+
+        <!-- menu group renderer -->
+        <li class="dropdown" *ngFor="let group of content">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{group.text}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li *ngFor="let entry of group.pages">
+                <a routerLink="doc/{{group.prefix}}{{entry.ref}}">{{entry.title}}</a>
+              </li>
+          </ul>
+        </li>
+
+      </ul>
+    </div> <!-- closes 'collapse navbar-collapse' -->
+
+  </div> <!-- closes 'container-fluid' -->
+</nav> <!-- closes 'navbar navbar-default' -->
