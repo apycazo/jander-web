@@ -20,6 +20,7 @@ export class ViewerComponent implements OnInit {
   }
 
   ngOnInit() {
+    // empty
   }
 
 }

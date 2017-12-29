@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { MarkdownModule } from 'angular2-markdown';
+import { MarkdownModule } from 'ngx-md';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';

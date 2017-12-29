@@ -1,3 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Style imports */
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
+@import "~prismjs/themes/prism-okaidia.css";
+
+/* from google fonts */
+// @import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+
+/* Custom styles */
+$mainColor: #0000ff;
+$bodyColor: lighten(#000000,10%);
+$base-font: 1em;
+$fontShadowColor: #ddd;
+
+body {
+    background-color: $bodyColor;
+    /* fixed navbar requires this padding to avoid 'eating' content */
+    padding-top: 50px;
+    // font-family: 'Bubblegum Sans', cursive;
+    font-family: 'Mitr', sans-serif;
+
+    h1, h2 {
+        color: lighten($mainColor, 10%);
+        // text-shadow: -1px 0 $fontShadowColor, 0 1px $fontShadowColor, 1px 0 $fontShadowColor, 0 -1px $fontShadowColor;
+    }
+
+    code {
+        /* does not look very well without this extra padding */
+        padding-top: 6px;
+    }
+}
+
+// font size for large screens
+@media screen and (min-width: 1200px) {
+
+    body {
+        font-size: 15px;
+    }
+}

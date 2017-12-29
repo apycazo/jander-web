@@ -1,0 +1,40 @@
+
+$navbarBackgroundColor: lighten(#101010, 10%);
+$navbarTextColor: #fff;
+$navbarListOverColor: lighten($navbarBackgroundColor, 30%);
+$navbarListTextOverColor: darken(#fff, 10%);
+
+.navbar {
+
+    
+    
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid $navbarTextColor;
+
+    .navbar-brand {
+        padding-top: 10px;
+    }
+
+    .dropdown-toggle {
+        font-weight: bolder;
+    }
+
+    img {
+        max-width: 160px;
+    }
+
+    ul.dropdown-menu {
+        
+        background-color: $navbarBackgroundColor;
+
+        li a {
+            color: $navbarTextColor;
+        }
+
+        li :hover {
+            background-color: $navbarListOverColor;
+            color: #000;
+        }
+    }
+}
