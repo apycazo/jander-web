@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
     {
       name: 'devops', text: 'DevOps', prefix: 'devops__',
       pages: [
+        { title: 'General resources', ref: 'resources' },
         { title: 'Intellij IDEA', ref: 'idea' },
         { title: 'Atom.io', ref: 'atom' },
         { title: 'Bash shell', ref: 'bash' },

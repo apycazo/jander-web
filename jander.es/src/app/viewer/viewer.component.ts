@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
+declare var $: any;
 
 @Component({
   selector: 'app-viewer',
   templateUrl: './viewer.component.html',
   styleUrls: ['./viewer.component.scss']
 })
-export class ViewerComponent implements OnInit {
+export class ViewerComponent implements OnInit, AfterViewInit {
 
   readonly basePath = 'assets/docs/';
   docPath = '';
@@ -21,6 +23,11 @@ export class ViewerComponent implements OnInit {
 
   ngOnInit() {
     // empty
+  }
+
+  ngAfterViewInit(): void {
+    const h1 = $('h1');
+    console.log('after content: ', h1.length);
   }
 
 }

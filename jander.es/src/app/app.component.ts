@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService} from './shared.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ export class AppComponent {
 
   title = 'Jander.es';
 
-  constructor() {
+  constructor(private sharedSvc: SharedService) {
 
+    console.log('version: ', sharedSvc.version, ', full version:', sharedSvc.fullVersion());
   }
 }

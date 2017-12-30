@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewerComponent } from './viewer/viewer.component';
 
+/* Services */
+import { SharedService} from './shared.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { ViewerComponent } from './viewer/viewer.component';
     AppRoutingModule,
     MarkdownModule.forRoot()
   ],
-  providers: [],
+  providers: [ SharedService ],
   bootstrap: [ NavbarComponent, AppComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

@@ -16,6 +16,8 @@ $base-font: 1em;
 $fontShadowColor: #ddd;
 
 body {
+    background-image: url("assets/black_twill.png");
+    background-repeat: repeat;
     background-color: $bodyColor;
     /* fixed navbar requires this padding to avoid 'eating' content */
     padding-top: 50px;
