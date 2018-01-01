@@ -1,11 +1,27 @@
 <div class="markdown-panel">
   <div class="col-md-2" id="viewer-left-panel">
+    <div class="sticky-anchor"></div>
+    <div class="sticky-panel">
+
+      <nav id="sidebar" [hidden]="!config.chapters">
+        <div class="sidebar-header">
+          <h3>Chapters</h3>
+        </div>
+        <ul class="list-group components">
+          <a 
+            *ngFor="let chapter of config.chapters" 
+            [ngClass]="{ active: selectedChapter === chapter }" 
+            (click)="scrollToId(chapter); selectedChapter = chapter"
+            class="list-group-item">{{chapter.split('-').join(' ')}}</a>
+        </ul>
+      </nav>
     
+    </div>
   </div>
-  <div class="col-md-8" id="viewer-center-panel">
+  <div class="col-md-9" id="viewer-center-panel">
     <markdown [path]="docPath"></markdown>
   </div>
-  <div class="col-md-2" id="viewer-right-panel">
+  <div class="col-md-1" id="viewer-right-panel">
 
   </div>
 </div>
