@@ -1,5 +1,6 @@
 
 $sidebarMargin: 20px;
+$textShadowColor: white;
 
 .markdown-panel {
     color: white;
@@ -12,7 +13,7 @@ $sidebarMargin: 20px;
     .sticky-panel {
         margin-top: 0 !important;
         position: fixed;
-        z-index: 10000;
+        // z-index: 10000;
         display: flex;
         align-items: stretch;
         height: 100%;

@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 export class SharedService {
 
   version = 1.0;
+  readonly basePath = 'assets/docs/';
   readonly content = [
     {
       name: 'devops', text: 'DevOps', prefix: 'devops__',
@@ -23,7 +24,7 @@ export class SharedService {
         { title: 'Spring boot testing', ref: 'testing', chapters: [
           'mocking-beans',
           'testing-json-objects',
-          'rest-controller-tests'
+          'testing-rest-controllers'
         ] },
         { title: 'Proxying beans with Spring Boot', ref: 'proxies' },
         { title: 'Spring Boot Admin', ref: 'springbootadmin' }
@@ -32,7 +33,15 @@ export class SharedService {
     {
       name: 'angular', text: 'Angular/AngularJS', prefix: 'angular__',
       pages: [
-        { title: 'Angular quick start', ref: 'angular' }
+        { title: 'Angular quick start', ref: 'quickstart', chapters: [
+          'project-setup',
+          'components',
+          'services',
+          'property-binding',
+          'event-binding',
+          'deploying',
+          'others'
+        ]}
       ]
     },
     {
@@ -54,6 +63,23 @@ export class SharedService {
 
   idToPath(id: string) {
     return id.split('__').join('/') + '.md';
+  }
+
+  generatePaths(id: string, config) {
+
+    const paths = [];
+
+    if (config && config.chapters) {
+      const entryPath = this.basePath + id.split('__').join('/');
+      config.chapters.forEach(chapter => {
+        paths.push(entryPath + '/' + chapter + '.md');
+      });
+
+    } else {
+      paths.push(id.split('__').join('/') + '.md');
+    }
+
+    return paths;
   }
 
   configForRoute (id: string) {

@@ -12,6 +12,7 @@ import { ViewerComponent } from './viewer/viewer.component';
 
 /* Services */
 import { SharedService} from './shared.service';
+import { TestComponent } from './home/test/test.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SharedService} from './shared.service';
     HomeComponent,
     AboutComponent,
     NavbarComponent,
-    ViewerComponent
+    ViewerComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

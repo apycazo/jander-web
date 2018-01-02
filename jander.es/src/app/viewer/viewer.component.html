@@ -1,11 +1,11 @@
-<div class="markdown-panel">
+<div class="markdown-panel" [id]="id">
   <div class="col-md-2" id="viewer-left-panel">
     <div class="sticky-anchor"></div>
     <div class="sticky-panel">
 
       <nav id="sidebar" [hidden]="!config.chapters">
         <div class="sidebar-header">
-          <h3>Chapters</h3>
+          <h3 (click)="goToTopPage()">Content</h3>
         </div>
         <ul class="list-group components">
           <a 
@@ -18,11 +18,25 @@
     
     </div>
   </div>
-  <div class="col-md-9" id="viewer-center-panel">
-    <markdown [path]="docPath"></markdown>
-  </div>
-  <div class="col-md-1" id="viewer-right-panel">
+  <div class="col-md-9" id="viewer-center-panel">    
+    <!-- <markdown [path]="docPath"></markdown> -->
+    <h1>{{config.title}}</h1>
 
+    <div *ngIf="selectedChapter; else singleFile">
+      <div *ngFor="let chapter of config.chapters">
+        <h2 id="{{chapter}}">{{generateChapterTitle(chapter)}}</h2>
+        <hr>
+        <markdown path="{{generateChapterPath(chapter)}}"></markdown>
+      </div>
+    </div>
+    <ng-template #singleFile>
+      <markdown path="{{docPath + '.md'}}"></markdown>
+    </ng-template>
+
+  </div>
+
+  <div class="col-md-1" id="viewer-right-panel">
+      <!-- empty -->
   </div>
 </div>
 

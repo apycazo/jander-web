@@ -10,10 +10,10 @@
 @import url('https://fonts.googleapis.com/css?family=Mitr');
 
 /* Custom styles */
-$mainColor: #0000ff;
+$mainColor: #235bd4;
 $bodyColor: lighten(#000000,10%);
 $base-font: 1em;
-$fontShadowColor: #ddd;
+$fontShadowColor: lighten(#000000,60%);
 
 body {
     background-image: url("assets/black_twill.png");
@@ -24,9 +24,13 @@ body {
     // font-family: 'Bubblegum Sans', cursive;
     font-family: 'Mitr', sans-serif;
 
+    h1 {
+        font-weight: bolder;
+    }
+
     h1, h2 {
         color: lighten($mainColor, 10%);
-        // text-shadow: -1px 0 $fontShadowColor, 0 1px $fontShadowColor, 1px 0 $fontShadowColor, 0 -1px $fontShadowColor;
+        // text-shadow: -1px 0 $fontShadowColor, 0 1px $fontShadowColor, 1px 0 $fontShadowColor, 0 -1px $fontShadowColor;        
     }
 
     code {
