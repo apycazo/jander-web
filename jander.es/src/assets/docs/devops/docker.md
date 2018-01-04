@@ -1,5 +1,3 @@
-# Docker
-
 ## Command samples
 
 <style type="text/css">
@@ -188,7 +186,7 @@ drwxr-xr-x   12 root     root          4096 Mar  3 11:20 var/
 
 From https://github.com/apycazo/trivialis repository:
 
-```
+```docker
 ### ==========================================================================
 ### Docker image for the trivialis provider to run:
 ### $ mvn clean package && docker build -t trivialis/provider .
@@ -215,7 +213,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/trivialis-
 
 ## Sample docker compose file
 
-```
+```docker
 From https://github.com/apycazo/trivialis repository
 # Full docker test:
 # $ docker-compose up -d --build
@@ -241,9 +239,9 @@ services:
 
 ## Docker compose with external build references
 
-`docker-compose.yml`
+File: `docker-compose.yml`
 
-```
+```docker
 # $ export BASE_PATH=/usr/local/test
 # $ docker-compose up -d --build
 
@@ -259,9 +257,9 @@ services:
             - 8080:8080
 ```
 
-`.env`
+File: `.env`
 
-```
+```bash
 BASE_PATH=/usr/local/test
 ```
 
@@ -302,13 +300,13 @@ Use parameter `-v <target>` to mount a volume on the container (this is equivale
 
 ## To save a running container as an image
 
-```
+```bash
 docker commit -m “commit message” -a “author” container_name username/image_name:tag
 ```
 
 **A reduced form:**
 
-```
+```bash
 docker commit <tag> <new name>
 ```
 
@@ -326,7 +324,7 @@ docker commit <tag> <new name>
 
 When a container is deployed on a Linux host with SELinux active, volumes should be mounted attaching the option `:z` so docker can tell SELinux to allow linking. So a volume might look like this:
 
-```
+```docker
 volumes:
     - /volumes/data:/var/data:z
 ```
@@ -335,7 +333,7 @@ volumes:
 
 * Edit or create file (directory too): `/etc/systemd/system/docker.service.d/http-proxy.conf`
 
-```
+```bash
 [Service]
 Environment="HTTP_PROXY=http://<user>:<pass>@<proxy_url>:<port>/"
 Environment="NO_PROXY=127.0.0.1,localhost,192.168.*"
@@ -349,7 +347,7 @@ Environment="NO_PROXY=127.0.0.1,localhost,192.168.*"
 
 ### Create volume container (Dockerfile)
 
-```
+```docker
 # Pull base image
 FROM ubuntu:16.04
 # Create config directory
@@ -360,7 +358,7 @@ VOLUME /data
 
 ### Container service (docker-compose.yml)
 
-```
+```docker
 version: "2.1"
 services:
   data-store:
@@ -380,7 +378,7 @@ networks:
 
 ### Container usage (docker-compose.yml, sample service)
 
-```
+```docker
 version: "2.1"
 services:
   myservice:

@@ -1,6 +1,11 @@
 
 $sidebarMargin: 20px;
 $textShadowColor: white;
+$linkColor: #337ab7;
+$linkOverColor: white;
+
+// github elements style fix
+
 
 .markdown-panel {
     color: white;
@@ -8,6 +13,10 @@ $textShadowColor: white;
 
     #viewer-left-panel {
         padding-left: $sidebarMargin;
+    }
+
+    .gap {
+        min-height: 2em;
     }
 
     .sticky-panel {
@@ -30,8 +39,7 @@ $textShadowColor: white;
         
             li {
                 padding: 5px;
-                margin: 0px;
-                
+                margin: 0px;                
             }
     
             .list-group-item {
@@ -40,6 +48,7 @@ $textShadowColor: white;
                 cursor: pointer;
                 border-width: 1px 0px 1px 0px;
                 border-color: gray;
+                color: $linkColor;
                 background: transparent;
     
                 &:first-child {            
@@ -53,13 +62,14 @@ $textShadowColor: white;
                     border-color: gray;
                     background-color: lighten(black, 15%);
                 }
+                &:hover {
+                    color: $linkOverColor;
+                }
             }
         }
     }
     
 }
-
-
 
 @media (max-width: 1000px) {
 

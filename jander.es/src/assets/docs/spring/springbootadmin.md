@@ -1,12 +1,10 @@
-# Spring boot admin
-
 ## Custom security
 
 ### Console user/password
 
 Set the following properties:
 
-```
+```properties
 # --- User name and password for the spring boot admin console
 security.user.name      = admin
 security.user.password  = 4dm1n
@@ -16,7 +14,7 @@ security.user.password  = 4dm1n
 
 Set the following properties on the client service (example):
 
-```
+```properties
 spring.boot.admin.username: demo
 spring.boot.admin.password: d3m0
 ```

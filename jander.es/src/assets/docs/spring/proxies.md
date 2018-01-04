@@ -1,8 +1,5 @@
-# Creating a proxy class for Spring
-
-**Reference**: [https://dzone.com/articles/power-proxies-java](java proxies).
-
 ## Create a custom initializer
+---
 
 Base source code:
 
@@ -17,6 +14,7 @@ public class CustomInitializer
 ```
 
 ## Create a custom invocation handler
+---
 
 Example:
 
@@ -32,6 +30,7 @@ public class CustomHandler implements InvocationHandler
 ```
 
 ## Registering custom initializer
+---
 
 #### Using a factory
 

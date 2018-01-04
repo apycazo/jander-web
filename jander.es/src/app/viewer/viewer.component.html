@@ -19,9 +19,10 @@
     </div>
   </div>
   <div class="col-md-9" id="viewer-center-panel">    
-    <!-- <markdown [path]="docPath"></markdown> -->
+    
     <h1>{{config.title}}</h1>
 
+    <!-- displayed when chapters are present in config -->
     <div *ngIf="selectedChapter; else singleFile">
       <div *ngFor="let chapter of config.chapters">
         <h2 id="{{chapter}}">{{generateChapterTitle(chapter)}}</h2>
@@ -29,14 +30,20 @@
         <markdown path="{{generateChapterPath(chapter)}}"></markdown>
       </div>
     </div>
+    <!-- displayed when config declares no chapters -->
     <ng-template #singleFile>
       <markdown path="{{docPath + '.md'}}"></markdown>
     </ng-template>
+    <!-- this is just to leave some space at the bottom -->
+    <div class="gap"></div>
 
   </div>
 
   <div class="col-md-1" id="viewer-right-panel">
       <!-- empty -->
   </div>
+
+  
+  
 </div>
 

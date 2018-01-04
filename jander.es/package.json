@@ -24,6 +24,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "gist-embed": "^2.6.0",
     "jquery": "^3.2.1",
     "ngx-md": "^3.1.0",
     "rxjs": "^5.5.2",

@@ -13,14 +13,33 @@ export class SharedService {
         { title: 'Intellij IDEA', ref: 'idea' },
         { title: 'Atom.io', ref: 'atom' },
         { title: 'Bash shell', ref: 'bash' },
-        { title: 'Docker', ref: 'docker' }
+        { title: 'Docker', ref: 'docker' },
+        { title: 'Virtualbox Linux', ref: 'linuxvm', chapters: [
+          'packages-to-install',
+          'configuration',
+          'customize-bashrc',
+          'software',
+          'maintenance'
+        ] }
       ]
     },
     {
-      name: 'spring', text: 'Java/Spring', prefix: 'spring__',
+      name: 'spring', text: 'Spring', prefix: 'spring__',
       pages: [
-        { title: 'Microservices with Spring', ref: 'microservice' },
-        { title: 'Http clients and RestTemplate', ref: 'rest' },
+        { title: 'Microservices with Spring', ref: 'microservices', chapters: [
+          'project-setup',
+          'service-setup',
+          'discovery-with-eureka',
+          'spring-boot-admin',
+          'cloud-config'
+        ] },
+        { title: 'Spring Rest', ref: 'springrest', chapters: [
+          'http-servlet-object',
+          'proxy-request',
+          'cross-domain-requests',
+          'ssl',
+          'response-filter'
+        ] },
         { title: 'Spring boot testing', ref: 'testing', chapters: [
           'mocking-beans',
           'testing-json-objects',
@@ -39,8 +58,14 @@ export class SharedService {
           'services',
           'property-binding',
           'event-binding',
+          'core-directive-ngfor',
+          'core-directive-ngif',
+          'http-client',
           'deploying',
           'others'
+        ]},
+        { title: 'Angular in-detail', ref: 'advanced', chapters: [
+          'component-lifecycle'
         ]}
       ]
     },

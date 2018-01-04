@@ -36,6 +36,11 @@ body {
     code {
         /* does not look very well without this extra padding */
         padding-top: 6px;
+
+        &.gist {
+            background-color: transparent;
+            padding: 2px 2px 2px 2px;
+        }
     }
 }
 

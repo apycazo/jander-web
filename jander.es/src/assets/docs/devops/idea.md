@@ -1,5 +1,3 @@
-# IntelliJ IDEA
-
 ## Shortcuts
 
 <style type="text/css">

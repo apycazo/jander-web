@@ -1,5 +1,3 @@
-# Linux Bash Shell
-
 ## FTP commands
 
 ### Establish connection

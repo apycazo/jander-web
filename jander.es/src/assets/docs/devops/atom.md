@@ -1,5 +1,3 @@
-# Atom editor/IDE
-
 ## Additional packages
 
 * **emmet**: Auto-complete package

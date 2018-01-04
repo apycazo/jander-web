@@ -1,5 +1,6 @@
-# Resource pages
+Some web utils and resource sites:
 
+* **HTTP client test site**: https://httpbin.org/
 * **Markdown table converter**: https://www.tablesgenerator.com/html_tables
 * **Google fonts**: https://fonts.google.com/
 * **W3 Schools**: https://www.w3schools.com/

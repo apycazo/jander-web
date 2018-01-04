@@ -13,6 +13,7 @@ import { ViewerComponent } from './viewer/viewer.component';
 /* Services */
 import { SharedService} from './shared.service';
 import { TestComponent } from './home/test/test.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TestComponent } from './home/test/test.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MarkdownModule.forRoot()
   ],
   providers: [ SharedService ],
