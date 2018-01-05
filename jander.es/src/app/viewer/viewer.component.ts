@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SharedService } from '../shared.service';
+
+declare var $: any;
 
 @Component({
   selector: 'app-viewer',
   templateUrl: './viewer.component.html',
   styleUrls: ['./viewer.component.scss']
 })
-export class ViewerComponent {
+export class ViewerComponent implements AfterViewInit {
 
   readonly basePath = 'assets/docs/';
   docPath = '';
@@ -24,6 +26,12 @@ export class ViewerComponent {
       // extract config
       this.config = sharedService.configForRoute(res.id);
       this.selectedChapter = this.config && this.config.chapters && this.config.chapters[0] || '';
+      const gist = $('.gist-holder');
+      if (gist) {
+        console.log('located gist element!');
+      } else {
+        console.log('nothing found on route');
+      }
     });
   }
 
@@ -44,6 +52,15 @@ export class ViewerComponent {
     document.getElementById(id).scrollIntoView();
     // compensate fixed navbar: 50px
     window.scrollBy(0, -60);
+  }
+
+  ngAfterViewInit () {
+    const gist = $('.gist');
+    if (gist) {
+      console.log('located gist!');
+    } else {
+      console.log('nothing found');
+    }
   }
 
 }

@@ -1,105 +1,18 @@
 ## Shortcuts
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">Operation</th>
-    <th class="tg-yw4l">Shortcut</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Auto format code</td>
-    <td class="tg-yw4l">Ctrl + Alt + L</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Comment code</td>
-    <td class="tg-yw4l">Ctrl + /</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Open 'find anywhere' tab</td>
-    <td class="tg-yw4l">Shift x2</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">New line (begin)</td>
-    <td class="tg-yw4l">Shift + Enter</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Duplicate line</td>
-    <td class="tg-yw4l">Ctrl + D</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Remove line</td>
-    <td class="tg-yw4l">Ctrl + Y</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Move line UP</td>
-    <td class="tg-yw4l">Ctrl + Shift + UP</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Move line DOWN</td>
-    <td class="tg-yw4l">Ctrl + Shift + DOWN</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Select custom fold</td>
-    <td class="tg-yw4l">Ctrl + Alt + .</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Create test (On class name)</td>
-    <td class="tg-yw4l">Alt + Enter</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Override methods</td>
-    <td class="tg-yw4l">Ctrl + O</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Implement methods</td>
-    <td class="tg-yw4l">Ctrl + I</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Custom fold</td>
-    <td class="tg-yw4l">Ctrl + Alt + T</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Insert live template</td>
-    <td class="tg-yw4l">Ctrl + J</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Wrap with live template</td>
-    <td class="tg-yw4l">Ctrl + Alt + J</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Add cursor (multiselect)</td>
-    <td class="tg-yw4l">Alt + Shift + Left-Click</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Select next (multiselect)</td>
-    <td class="tg-yw4l">Alt + J</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Unselect last</td>
-    <td class="tg-yw4l">Alt + Shift + J</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Paste from clipboard history</td>
-    <td class="tg-yw4l">Ctrl + Shift + V</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Bookmark current line</td>
-    <td class="tg-yw4l">F11</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Bookmarks navigation</td>
-    <td class="tg-yw4l">Shift + F11</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Go to implementation</td>
-    <td class="tg-yw4l">Ctrl + Alt + B</td>
-  </tr>
-</table>
+| Operation                    | Shortcut                 | Operation                    | Shortcut                 |
+|-----------------------------:|:-------------------------|-----------------------------:|:-------------------------|
+| Auto format code             | Ctrl + Alt + L           | Go to implementation         | Ctrl + Alt + B           |
+| Comment code                 | Ctrl + /                 | Bookmarks navigation         | Shift + F11              |
+| Open 'find anywhere' tab     | Shift x2                 | Bookmark current line        | F11                      |
+| New line (begin)             | Shift + Enter            | Paste from clipboard history | Ctrl + Shift + V         |
+| Duplicate line               | Ctrl + D                 | Unselect last                | Alt + Shift + J          |
+| Remove line                  | Ctrl + Y                 | Select next (multiselect)    | Alt + J                  |
+| Move line UP                 | Ctrl + Shift + UP        | Add cursor (multiselect)     | Alt + Shift + Left-Click |
+| Move line DOWN               | Ctrl + Shift + DOWN      | Wrap with live template      | Ctrl + Alt + J           |
+| Select custom fold           | Ctrl + Alt + .           | Insert live template         | Ctrl + J                 |
+| Create test (On class name)  | Alt + Enter              | Custom fold                  | Ctrl + Alt + T           |
+| Override methods             | Ctrl + O                 | Implement methods            | Ctrl + I                 |
 
 ## Scratches
 

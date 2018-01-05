@@ -49,7 +49,7 @@ $ [ 200 -eq `curl -skL https://www.google.es -w "%{http_code}" -o /dev/null` ]
 
 Edit `~/.curlrc`
 
-```
+```text
 proxy = {user}:{pass}@{proxy-host}:{port}
 ```
 
@@ -87,7 +87,8 @@ fi
 ## Sed replace lines containing text
 
 **Given file 'test.txt':**
-```
+
+```text
 this is line one
 this line is my_target to replace
 this is another line
@@ -98,7 +99,7 @@ this is another line
 
 **Expect:**
 
-```
+```text
 this is line one
 REMOVED LINE
 this is another line

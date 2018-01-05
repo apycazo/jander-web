@@ -13,7 +13,11 @@ export class SharedService {
         { title: 'Intellij IDEA', ref: 'idea' },
         { title: 'Atom.io', ref: 'atom' },
         { title: 'Bash shell', ref: 'bash' },
+        { title: 'Git version control', ref: 'git' },
+        { title: 'Vim editor', ref: 'vim' },
         { title: 'Docker', ref: 'docker' },
+        { title: 'Tomcat', ref: 'tomcat' },
+        { title: 'Nginx', ref: 'nginx' },
         { title: 'Virtualbox Linux', ref: 'linuxvm', chapters: [
           'packages-to-install',
           'configuration',
@@ -50,6 +54,15 @@ export class SharedService {
       ]
     },
     {
+      name: 'javascript', text: 'Javascript', prefix: 'javascript__',
+      pages : [
+        { title: 'Quickstart', ref: 'quickstart', chapters: [
+          'basics',
+          'promises'
+        ]}
+      ]
+    },
+    {
       name: 'angular', text: 'Angular/AngularJS', prefix: 'angular__',
       pages: [
         { title: 'Angular quick start', ref: 'quickstart', chapters: [
@@ -65,17 +78,19 @@ export class SharedService {
           'others'
         ]},
         { title: 'Angular in-detail', ref: 'advanced', chapters: [
-          'component-lifecycle'
+          'component-lifecycle',
+          'pipes'
         ]}
       ]
-    },
-    {
-      name: 'test', text: 'Test docs', prefix: 'test__',
-      pages: [
-        { title: 'Test page one', ref: 'test' },
-        { title: 'Test page two', ref: 'test2' }
-      ]
     }
+    // ,
+    // {
+    //   name: 'test', text: 'Test docs', prefix: 'test__',
+    //   pages: [
+    //     { title: 'Test page one', ref: 'test' },
+    //     { title: 'Test page two', ref: 'test2' }
+    //   ]
+    // }
   ];
 
   constructor() {
