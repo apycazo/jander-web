@@ -58,7 +58,9 @@ export class SharedService {
       pages : [
         { title: 'Quickstart', ref: 'quickstart', chapters: [
           'basics',
-          'promises'
+          'promises',
+          'classes',
+          'prototypes'
         ]}
       ]
     },
