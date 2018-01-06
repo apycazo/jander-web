@@ -1,4 +1,4 @@
-## Redirect port 8081 to 10.0.1.1 port 80
+### Redirect port 8081 to 10.0.1.1 port 80
 
 ```cson
 server {
@@ -15,7 +15,7 @@ server {
 }
 ```
 
-## Rewrite incoming URL and redirect
+### Rewrite incoming URL and redirect
 
 Example: Redirect http://{serverName}/test/path/some/other/file.txt to http://127.0.0.1:8787/some/other/file.txt
 

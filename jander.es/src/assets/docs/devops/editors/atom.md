@@ -1,4 +1,4 @@
-## Additional packages
+### Additional packages
 
 * **emmet**: Auto-complete package
 * **minimap**: Side minimap.
@@ -10,7 +10,7 @@
 * **atom-runner**: Run code directly from editor.
 * **atom-live-server**: Static content server.
 
-## Tips
+### Tips
 
 **Multiple cursors**
 

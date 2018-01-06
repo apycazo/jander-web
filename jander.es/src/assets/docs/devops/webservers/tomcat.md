@@ -1,6 +1,6 @@
-## Configure HTTPS 
+### Configure HTTPS 
 
-### Generate certificate file (windows) on c:\develop\develop.jks
+#### Generate certificate file (windows) on c:\develop\develop.jks
 
 *note: uses 'develop' as password.*
 
@@ -8,7 +8,7 @@
 keytool -genkey -alias develop -keyalg RSA -file develop.csr -keystore d:\develop\develop.jks
 ```
 
-### Configure https (/conf/server.xml)
+#### Configure https (/conf/server.xml)
 
 ```xml
 <Connector 
@@ -23,7 +23,7 @@ keytool -genkey -alias develop -keyalg RSA -file develop.csr -keystore d:\develo
     keystorePass="develop"/>
 ```
 
-### Test
+#### Test
 
 Start tomcat from `/bin/start.sh` or `/bin/start.bat`. Enter https://127.0.0.1:8443
 

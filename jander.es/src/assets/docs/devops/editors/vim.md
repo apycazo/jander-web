@@ -1,4 +1,4 @@
-## Basic commands
+### Basic commands
 
 | Operation | Command |
 | --------- | ------- |

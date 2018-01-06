@@ -1,4 +1,4 @@
-## Shortcuts
+### Shortcuts
 
 | Operation                    | Shortcut                 | Operation                    | Shortcut                 |
 |-----------------------------:|:-------------------------|-----------------------------:|:-------------------------|
@@ -14,26 +14,27 @@
 | Create test (On class name)  | Alt + Enter              | Custom fold                  | Ctrl + Alt + T           |
 | Override methods             | Ctrl + O                 | Implement methods            | Ctrl + I                 |
 
-## Scratches
+### Scratches
 
 Do one of the following:
 
 * Press `Ctrl+Shift+Alt+Insert`.
 * Press `Ctrl+Shift+A` and start typing 'scratch'.
 
-## Plugins
+### Plugins
 
 * Awesome console
 * Lombok
 * Grep console
 * Gitignore
 * Quick notes
-* SonarLint
+* SonarLint (style review)
+* Code Glance (minimap)
 * [optional] VisualVM Launcher (if https://visualvm.github.io/download.html is installed)
 * [optional] Gitlab integration
 * [optional] DBNavigator
 
-## Settings
+### Settings
 
 **Set JVM**
 

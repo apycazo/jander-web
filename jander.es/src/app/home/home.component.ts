@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  readonly content = [];
+
+  constructor(private sharedService: SharedService) {
+    this.content = sharedService.content;
+  }
 
   ngOnInit() {
+    // nothing to do
   }
 
 }

@@ -10,14 +10,15 @@ export class SharedService {
       name: 'devops', text: 'DevOps', prefix: 'devops__',
       pages: [
         { title: 'General resources', ref: 'resources' },
-        { title: 'Intellij IDEA', ref: 'idea' },
-        { title: 'Atom.io', ref: 'atom' },
         { title: 'Bash shell', ref: 'bash' },
         { title: 'Git version control', ref: 'git' },
-        { title: 'Vim editor', ref: 'vim' },
         { title: 'Docker', ref: 'docker' },
-        { title: 'Tomcat', ref: 'tomcat' },
-        { title: 'Nginx', ref: 'nginx' },
+        { title: 'Editors', ref: 'editors', chapters: [
+          'idea', 'atom', 'vim'
+        ]},
+        { title: 'Web/App servers', ref: 'webservers', chapters: [
+          'nginx', 'tomcat'
+        ]},
         { title: 'Virtualbox Linux', ref: 'linuxvm', chapters: [
           'packages-to-install',
           'configuration',
@@ -56,18 +57,14 @@ export class SharedService {
     {
       name: 'javascript', text: 'Javascript', prefix: 'javascript__',
       pages : [
-        { title: 'Quickstart', ref: 'quickstart', chapters: [
+        { title: 'Introduction', ref: 'introduction', chapters: [
           'basics',
           'promises',
           'classes',
-          'prototypes'
-        ]}
-      ]
-    },
-    {
-      name: 'angular', text: 'Angular/AngularJS', prefix: 'angular__',
-      pages: [
-        { title: 'Angular quick start', ref: 'quickstart', chapters: [
+          'prototypes',
+          'dates'
+        ]},
+        { title: 'Angular basics', ref: 'angular-basic', chapters: [
           'project-setup',
           'components',
           'services',
@@ -79,7 +76,7 @@ export class SharedService {
           'deploying',
           'others'
         ]},
-        { title: 'Angular in-detail', ref: 'advanced', chapters: [
+        { title: 'Angular advanced', ref: 'angular-advanced', chapters: [
           'component-lifecycle',
           'pipes'
         ]}
