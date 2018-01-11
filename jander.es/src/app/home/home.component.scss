@@ -94,3 +94,15 @@ $containerHeight: calc(100vh - 101px);
     }
 }
 
+// for now, just ignore 'about' content
+.about {
+    display: none;
+}
+
+@media screen and (max-height: 700px) {
+
+    .about {
+        display: none;
+    }
+}
+

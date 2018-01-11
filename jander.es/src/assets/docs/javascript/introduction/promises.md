@@ -32,3 +32,30 @@ myCostlyOperation(10).then(
 ```
 
 Since the value passed (10) is an even number, the console will show the output *Completed: ok*.
+
+### Wait for multiple promises to complete
+
+The class `Promise` has a static method to wait for all of them to complete: `all(iterable)`. This way, we can do:
+
+```javascript
+function operation (value, delay = 3000) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('completed ' + value), delay);
+    });
+}
+
+Promise.all([
+    operation(1, 5000),
+    operation(2, 2000)
+]).then(results => {
+    console.log(`Result[0]: ${results[0]} at ${new Date().toISOString()}`);
+    console.log(`Result[1]: ${results[1]} at ${new Date().toISOString()}`)
+});
+```
+
+The output of this (to show both were shown at the same time):
+
+```text
+Result[0]: completed 1 at 2018-01-09T21:34:38.655Z
+Result[1]: completed 2 at 2018-01-09T21:34:38.655Z
+```

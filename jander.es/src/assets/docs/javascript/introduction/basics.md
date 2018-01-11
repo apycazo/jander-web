@@ -75,7 +75,7 @@ In this case we are initializing the accumulator to '0', just for clarity.
 
 ### Map-Reduce
 
-This two functions can be effectively chained to transform and process data. The next example willcreate a number array from a string one, and then sum the values.
+This two functions can be effectively chained to transform and process data. The next example will create a number array from a string one, and then sum the values.
 
 ```javascript
 {
