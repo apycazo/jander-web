@@ -189,3 +189,21 @@ There are multiple predefined filters in angularjs:
 * date:{format} => `<p>{{ "2018-01-12" | date:'yyyy'}}</p>`
 * json: pretty prints json objects.
 * limitTo: Limits iterables. Example: `<li ng-repeat="entry in list | limitTo:10"> {{item.id}} </li>`.
+
+Filters can also be passed properties, separated in markup with ':', for example:
+
+```javascript
+angular.module('app',[]).filter('wrapWith', () => {
+    return (input, left, right) => {
+        left = left ? left : '"';
+        right = right ? right : left;
+        return `${left}${input}${right}`;
+    }
+})
+```
+
+```html
+<ul ng-controller="DemoController">
+    <li ng-repeat="element in data">{{element | wrapWith:'> ':' <'}}</li>
+</ul>
+```

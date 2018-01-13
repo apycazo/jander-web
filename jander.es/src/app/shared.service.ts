@@ -64,11 +64,16 @@ export class SharedService {
           'prototypes',
           'dates'
         ]},
-        { title: 'Angular 1.x', ref: 'angularjs-basic', chapters: [
+        { title: 'AngularJS', ref: 'angularjs-basic', chapters: [
           'project-setup',
-          'configuration'
+          'configuration',
+          'core-directive-ngrepeat',
+          'core-directive-ngif',
+          'core-directive-ngswitch',
+          'http-client',
+          'starter'
         ]},
-        { title: 'Angular 2+', ref: 'angular-basic', chapters: [
+        { title: 'Angular2+', ref: 'angular-basic', chapters: [
           'project-setup',
           'components',
           'services',
