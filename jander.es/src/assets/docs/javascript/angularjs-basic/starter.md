@@ -1,4 +1,4 @@
-A simple starter file, for quick tests
+A simple starter file, for quick tests. <a class="btn btn-sm btn-primary" href="https://jsbin.com/japekik/1/edit?html,css,js,output" target="_blank">Check on JSBin</a>
 
 ```html
 <!DOCTYPE html>

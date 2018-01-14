@@ -81,6 +81,7 @@ export class SharedService {
           'event-binding',
           'core-directive-ngfor',
           'core-directive-ngif',
+          'core-directive-ngswitch',
           'http-client',
           'deploying',
           'others'

@@ -1,5 +1,6 @@
 Some web utils and resource sites:
 
+* **GitHub CDN**: https://rawgit.com/
 * **HTTP client test site**: https://httpbin.org/
 * **Markdown table converter**: https://www.tablesgenerator.com/html_tables
 * **Google fonts**: https://fonts.google.com/

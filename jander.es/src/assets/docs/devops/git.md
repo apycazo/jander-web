@@ -1,4 +1,7 @@
-## Rebase with parent branch changes
+First step would be to follow the GitHub challenges. 
+<a class="btn btn-sm btn-primary" href="https://try.github.io/levels/1/challenges/1" target="_blank">Test on GitHub</a>
+
+### Rebase with parent branch changes
 
 Note: [Git rebase vs merge](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
@@ -7,14 +10,14 @@ git checkout feature
 git rebase master
 ```
 
-## Interactive rebase (ex: last 3 commits)
+### Interactive rebase (ex: last 3 commits)
 
 ```bash
 git checkout feature
 git rebase -i HEAD~3
 ```
 
-## Rebase pushed changes
+### Rebase pushed changes
 
 Example: Edit last 5 commits on branch 'test'.
 
@@ -23,7 +26,7 @@ git rebase -i origin/test~5 test
 git push origin +test
 ```
 
-## Abort merge
+### Abort merge
 
 Before the merge is done
 * Do merge without commit: `$ git merge --no-commit`
@@ -33,15 +36,15 @@ If merge is already done, two different options:
  * Reset from last merge: `$ git reset --merge`
  * Abort merge: `$ git merge --abort`
 
-## Undo changes
+### Undo changes
 
 * Local only: `$ git reset --hard`
 * From remote: `$ git reset --hard origin/<branchName>`
 
 
-## Before merging back into master
+### Before merging back into master
 
-```
+```bash
 $ git pull origin master
 $ git rebase -i master
 $ git commit -m "feature <x>"
@@ -49,7 +52,7 @@ $ git push
 $ git checkout master
 $ git pull <feature_branch>
 ```
-## Reverting bad merge
+### Reverting bad merge
 
 ```bash
 $ git reflog
@@ -61,42 +64,46 @@ b58aae8 HEAD@{1}: fetch origin/branch
 $ git reset --hard HEAD{2}
 ```
 
-## Discard changes
+### Discard changes
 
 * **Including unstaged**: `git reset HEAD`
 * **Not including**: `git checkout -- .`
 
-# Setup
+## Setup
 
-## User name and email
-`$ git config --global user.name "John Doe"`
+### User name and email
 
-`$ git config --global user.email johndoe@example.com`
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
 
-## Configure line endings to linux style
-`git config --global core.autocrlf input`
+### Configure line endings to linux style
 
-## Generate SSH keys (optional)
+```bash
+git config --global core.autocrlf input
+```
+
+### Generate SSH keys (optional)
 
 ```bash
 ssh-keygen -t rsa -C "your.email@example.com" -b 4096
 ```
 
-## Aliasing
+### Aliasing
 
 Using command line:
 
-`$ git config --global alias.co checkout`
-
-`$ git config --global alias.br branch`
-
-`$ git config --global alias.ci commit`
-
-`$ git config --global alias.st status`
+```bash
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+```
 
 Or edit `~/.gitconfig` file.
 
-## Sample `~/.gitconfig` file
+### Sample `~/.gitconfig` file
 
 ```conf
 [http]

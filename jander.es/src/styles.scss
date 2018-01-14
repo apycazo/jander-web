@@ -29,6 +29,15 @@ body {
     // font-family: 'Bubblegum Sans', cursive;
     font-family: 'Mitr', sans-serif;
 
+    // customize primary button
+    .btn-primary {
+        border: 1px solid white;
+        &:hover {
+            border: 1px solid white;
+        }
+    }
+
+
     h1 {
         font-weight: bolder;
     }

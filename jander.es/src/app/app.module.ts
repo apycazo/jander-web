@@ -14,6 +14,7 @@ import { ViewerComponent } from './viewer/viewer.component';
 import { SharedService} from './shared.service';
 import { TestComponent } from './home/test/test.component';
 import { HttpClientModule } from '@angular/common/http';
+import { JsbinComponent } from './msc/jsbin/jsbin.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     NavbarComponent,
     ViewerComponent,
-    TestComponent
+    TestComponent,
+    JsbinComponent
   ],
   imports: [
     BrowserModule,
