@@ -42,6 +42,10 @@ Next we need to import AngularJS into our web. We will also include a simple sty
 </html>
 ```
 
+### AngularJS CDN 
+
+Cloudfare provides the latest angularjs files, and can be accessed at https://cdnjs.com/libraries/angular.js/1.6.8
+
 ### Create a main angular module
 
 This will be our main app module, the expression for this is `angular.module({moduleName}, [dependencies])`. Dependencies can be empty, but not undefined, that would be the expression to *retrieve* an angular module. So, we will create this module, without any additional dependencies, and name it `app`. This last value is important, since we are going to need it after this.

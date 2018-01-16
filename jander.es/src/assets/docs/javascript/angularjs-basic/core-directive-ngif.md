@@ -6,7 +6,7 @@ This directive is useful when we do not want to render part of the DOM depending
 </div>
 ```
 
-This is different another options, without using this would be, but this option will render the DOM, and use 'display' to hide it.
+This is a different another option, which will render the DOM, and use 'display' to hide it.
 
 ```html
 <div ng-controller="DemoController">

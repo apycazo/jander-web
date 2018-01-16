@@ -71,6 +71,7 @@ export class SharedService {
           'core-directive-ngif',
           'core-directive-ngswitch',
           'http-client',
+          'routing',
           'starter'
         ]},
         { title: 'Angular2+', ref: 'angular-basic', chapters: [
