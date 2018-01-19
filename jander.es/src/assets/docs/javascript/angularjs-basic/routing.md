@@ -63,7 +63,7 @@ To access the parameters we need to inject `$routeParams` in the controller, and
 
 ### Basic example
 
-A complete example using these features can be reviewed below, or <a class="btn btn-sm btn-primary" href="https://jsbin.com/bakibap/1/edit?html,js,output" target="_blank">Check on JSBin</a>, or <a class="btn btn-sm btn-primary" href="https://github.com/apycazo/jander-angularjs/blob/master/demo/ng-route-demo.html" target="_blank">Check on GitHub</a>. 
+A complete example using these features can be reviewed below, or <a class="btn btn-sm btn-primary" href="https://plnkr.co/edit/WGgZcOM0bvCSdrWZAwoB?p=preview" target="_blank">Check in Plunker</a>, or <a class="btn btn-sm btn-primary" href="https://github.com/apycazo/jander-angularjs/blob/master/demo/ng-route-demo.html" target="_blank">Check on GitHub</a>. 
 
 ```html
 <!DOCTYPE html>
