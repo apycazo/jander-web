@@ -13,6 +13,9 @@ export class SharedService {
         { title: 'Bash shell', ref: 'bash' },
         { title: 'Git version control', ref: 'git' },
         { title: 'Docker', ref: 'docker' },
+        { title: 'Big Data', ref: 'bigdata', chapters: [
+          'hadoop', 'yarn', 'hive', 'spark'
+        ] },
         { title: 'Editors', ref: 'editors', chapters: [
           'idea', 'atom', 'vim'
         ]},
@@ -29,8 +32,16 @@ export class SharedService {
       ]
     },
     {
-      name: 'spring', text: 'Spring', prefix: 'spring__',
+      name: 'spring', text: 'Java & Spring', prefix: 'spring__',
       pages: [
+        { title: 'Javalin rest service', ref: 'javalin', chapters: [
+          'setup',
+          'routing',
+          'context',
+          'handlers',
+          'security',
+          'packaging'
+        ]},
         { title: 'Microservices with Spring', ref: 'microservices', chapters: [
           'project-setup',
           'service-setup',
@@ -63,6 +74,14 @@ export class SharedService {
           'classes',
           'prototypes',
           'dates'
+        ]},
+        { title: 'VueJS', ref: 'vuejs', chapters: [
+          'setup',
+          'data-binding',
+          'events',
+          'conditionals',
+          'classes',
+          'components'
         ]},
         { title: 'AngularJS', ref: 'angularjs-basic', chapters: [
           'project-setup',
@@ -99,7 +118,8 @@ export class SharedService {
     //   name: 'test', text: 'Test docs', prefix: 'test__',
     //   pages: [
     //     { title: 'Test page one', ref: 'test' },
-    //     { title: 'Test page two', ref: 'test2' }
+    //     { title: 'Test page two', ref: 'test2' },
+    //     { title: 'CV', ref: 'cv' }
     //   ]
     // }
   ];

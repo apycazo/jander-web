@@ -1,5 +1,6 @@
 Some web utils and resource sites:
 
+* **Dev environments online**: https://repl.it
 * **GitHub CDN**: https://rawgit.com/
 * **HTTP client test site**: https://httpbin.org/
 * **Markdown table converter**: https://www.tablesgenerator.com/html_tables
