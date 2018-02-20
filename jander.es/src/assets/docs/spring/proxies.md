@@ -36,7 +36,7 @@ public class CustomHandler implements InvocationHandler
 
 On `META-INF/spring.factories`:
 
-```
+```factory
 org.springframework.context.ApplicationContextInitializer=\
 com.example.YourInitializer
 ```

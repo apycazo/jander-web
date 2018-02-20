@@ -28,12 +28,17 @@ export class SharedService {
           'customize-bashrc',
           'software',
           'maintenance'
-        ] }
+        ]}
       ]
     },
     {
       name: 'spring', text: 'Java & Spring', prefix: 'spring__',
       pages: [
+        { title: 'Java utilities', ref: 'java', chapters: [
+          'java-exec',
+          'demo-quote-service',
+          'property-reader'
+        ]},
         { title: 'Javalin rest service', ref: 'javalin', chapters: [
           'setup',
           'routing',
@@ -62,7 +67,9 @@ export class SharedService {
           'testing-rest-controllers'
         ] },
         { title: 'Proxying beans with Spring Boot', ref: 'proxies' },
-        { title: 'Spring Boot Admin', ref: 'springbootadmin' }
+        { title: 'Spring Boot Admin', ref: 'springbootadmin' },
+        { title: 'Json Web Tokens (JWT)', ref: 'jwt' },
+        { title: 'Open Feign', ref: 'open-feign' }
       ]
     },
     {

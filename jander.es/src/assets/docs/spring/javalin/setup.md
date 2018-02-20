@@ -1,5 +1,7 @@
 Javalin is a lightweight framework to create rest services, which comes in handy when a regular spring app might be a bit complex or heavy for the task.
 
+Sources for a sample project can be found <a class="btn btn-sm btn-primary" href="https://github.com/apycazo/jander-javalin" target="_blank">Here</a>
+
 We are going to create a very simple service, to serve as a starting point to create more complex APIs. Using maven we are going to need the following dependencies:
 
 ```xml
