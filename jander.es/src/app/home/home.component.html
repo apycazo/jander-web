@@ -19,7 +19,7 @@
               <a class="btn btn-primary git" href="https://github.com/apycazo?tab=repositories" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i> APycazo at GitHub</a>
           </div>
         </div>
-        <div class="row content-parent">
+        <!-- <div class="row content-parent">
           <div *ngFor="let group of content" class="col-md-4 content">
             
             <ul class="list-unstyled">
@@ -29,11 +29,33 @@
                 </li>
             </ul>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="site-content">
+  <div class="container">
+    <h1 class="center">Site content</h1>
+    <div class="row content-block">
+      <div *ngFor="let group of content" class="col-md-4 content">
+        
+        <ul class="list-unstyled">
+            <h4>{{group.text}}</h4>
+            <li *ngFor="let entry of group.pages">
+              <a routerLink="../doc/{{group.prefix}}{{entry.ref}}">{{entry.title}}</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br>
+
 
 <div class="home-footer">
   <div>

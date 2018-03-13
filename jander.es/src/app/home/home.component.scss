@@ -31,7 +31,7 @@ $containerHeight: calc(100vh - 101px);
 
 .jumbotron {
 
-    position:relative;
+    position: relative;
     padding: 0px;
     margin-bottom: 0px;
     // border-bottom: 1px solid white;
@@ -53,7 +53,7 @@ $containerHeight: calc(100vh - 101px);
 
     .container {
         text-align: center;
-        padding-top: 5%;
+        padding-top: 10%;
         // total height, minus the navbar height (50px) minus the footer, minus a pixel for the border.
         height: $containerHeight;
     }
@@ -66,7 +66,7 @@ $containerHeight: calc(100vh - 101px);
         background: url("../../assets/pexels-photo-248515.png") top center no-repeat;
         width: 100%;
         background-size: cover;
-        overflow: hidden;
+        // overflow: hidden;
         // position: absolute;
         top:0;
         left:0;
@@ -85,6 +85,31 @@ $containerHeight: calc(100vh - 101px);
     }
 }
 
+.site-content {
+
+    border-top: 1px solid white;
+    margin-top: 1px;
+
+    .center {
+        text-align: center;
+    }
+
+    .content-block {
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        
+        ul {
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 3px;
+            margin: 5px;
+            padding: 3px;
+        }
+    }
+}
+
+
 // hide content on small screens
 @media screen and (max-width: 1000px) {
 
@@ -92,12 +117,16 @@ $containerHeight: calc(100vh - 101px);
 
         display: none;
     }
+
+    .about {
+        display: none;
+    }
 }
 
 // for now, just ignore 'about' content
-.about {
-    display: none;
-}
+// .about {
+//     display: none;
+// }
 
 @media screen and (max-height: 700px) {
 

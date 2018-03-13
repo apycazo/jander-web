@@ -32,13 +32,11 @@ export class SharedService {
       ]
     },
     {
-      name: 'spring', text: 'Java & Spring', prefix: 'spring__',
+      name: 'java', text: 'Java references', prefix: 'java__',
       pages: [
-        { title: 'Java utilities', ref: 'java', chapters: [
-          'java-exec',
-          'demo-quote-service',
-          'property-reader'
-        ]},
+        { title: 'Sample quote service', ref: 'demo-quote-service' },
+        { title: 'How to run exec from java', ref: 'java-exec' },
+        { title: 'Reading properties file', ref: 'property-reader' },
         { title: 'Javalin rest service', ref: 'javalin', chapters: [
           'setup',
           'routing',
@@ -47,6 +45,12 @@ export class SharedService {
           'security',
           'packaging'
         ]},
+        { title: 'Json Web Tokens (JWT)', ref: 'jwt' }
+      ]
+    },
+    {
+      name: 'spring', text: 'Java & Spring', prefix: 'spring__',
+      pages: [
         { title: 'Microservices with Spring', ref: 'microservices', chapters: [
           'project-setup',
           'service-setup',
@@ -68,8 +72,9 @@ export class SharedService {
         ] },
         { title: 'Proxying beans with Spring Boot', ref: 'proxies' },
         { title: 'Spring Boot Admin', ref: 'springbootadmin' },
-        { title: 'Json Web Tokens (JWT)', ref: 'jwt' },
-        { title: 'Open Feign', ref: 'open-feign' }
+        { title: 'Feign', ref: 'feign', chapters: [
+          'open-feign', 'spring-feign'
+        ] }
       ]
     },
     {

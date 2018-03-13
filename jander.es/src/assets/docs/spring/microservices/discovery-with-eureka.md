@@ -35,8 +35,9 @@ public class App
 }
 ```
 
-Configure the client (inside applications properties)
+Configure the server (inside applications properties)
 ```yml
+server.port: 8761
 eureka:
     environment: deployment
     datacenter: local

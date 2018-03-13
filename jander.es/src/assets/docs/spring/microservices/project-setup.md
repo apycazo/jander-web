@@ -35,14 +35,6 @@ spring cloud modules:
 ```xml
 <dependencyManagement>
     <dependencies>
-        <!-- Netflix dependencies import -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix</artifactId>
-            <version>${netflix.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>

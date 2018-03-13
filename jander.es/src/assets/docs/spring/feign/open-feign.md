@@ -1,9 +1,9 @@
-## Introduction
+### Introduction
 ---
 
 Feign is a framework to generate http clients automatically just by providing an annotated interface. Spring has an integration with feign, but here we are going to use the default, manual way to implement a rest client.
 
-## Dependencies
+### Dependencies
 ---
 
 Feign requires a few dependencies besides its core, and some of them might seem as duplicates, but are actually the feign wrappers over several thrird party libraries.
@@ -48,7 +48,7 @@ And as the http client we will include okhttp
 </dependency>
 ```
 
-## Declaring the service interface
+### Declaring the service interface
 ---
 
 To begin, we need to create an interface representing the rest service we want to generate, for example, for a basic GET/POST test service using the service provided by https://httpbin.org/:
@@ -65,7 +65,7 @@ public interface HttpBinService
 }
 ```
 
-## Creating the implementation
+### Creating the implementation
 ---
 
 We can create an implementation for the service above using feign like this:
