@@ -49,16 +49,16 @@ export class SharedService {
       ]
     },
     {
-      name: 'spring', text: 'Java & Spring', prefix: 'spring__',
+      name: 'spring', text: 'Spring Framework', prefix: 'spring__',
       pages: [
-        { title: 'Microservices with Spring', ref: 'microservices', chapters: [
+        { title: 'Rest services with Spring', ref: 'restservices', chapters: [
           'project-setup',
           'service-setup',
           'discovery-with-eureka',
           'spring-boot-admin',
           'cloud-config'
         ] },
-        { title: 'Spring Rest', ref: 'springrest', chapters: [
+        { title: 'Spring HTTP', ref: 'springhttp', chapters: [
           'http-servlet-object',
           'proxy-request',
           'cross-domain-requests',

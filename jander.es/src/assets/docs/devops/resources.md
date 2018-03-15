@@ -1,5 +1,6 @@
-Some web utils and resource sites:
+### Web utils and resource sites:
 
+* **Web IDE online**: https://stackblitz.com/
 * **Dev environments online**: https://repl.it
 * **GitHub CDN**: https://rawgit.com/
 * **HTTP client test site**: https://httpbin.org/
@@ -17,4 +18,14 @@ Some web utils and resource sites:
 * **Image placeholders**: http://lorempixel.com/
 * **Free images**: https://pixabay.com/
 * **Image patterns**: https://www.toptal.com/designers/subtlepatterns/
+
+### Baeldung references
+
+* **Securing cloud microservices**: http://www.baeldung.com/spring-cloud-securing-services
+* **Spring session**: http://www.baeldung.com/spring-session
+* **Java 8 functional interfaces**: http://www.baeldung.com/java-8-functional-interfaces
+* **Spring Kafka**: http://www.baeldung.com/spring-kafka
+* **Pug/Sub with redis**: http://www.baeldung.com/spring-data-redis-pub-sub
+* **CQRS on spring rest**: http://www.baeldung.com/cqrs-for-a-spring-rest-api
+
 

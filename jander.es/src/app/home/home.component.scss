@@ -10,6 +10,24 @@ $containerHeight: calc(100vh - 101px);
     border-radius: 5px;
 }
 
+.section-title {
+    // position: fixed;
+    height: 50px;
+    background-color:#222;
+    color: darken(white, 15%);
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align:center;
+
+    .section-text {
+        text-align:center;
+        display: inline-block;
+        padding-top: 3px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
 .home-footer {
     position: fixed;
     bottom: 0;
@@ -26,6 +44,14 @@ $containerHeight: calc(100vh - 101px);
     * {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+.link-without-underline {
+    text-decoration: none;
+
+    &:hover {
+        color: white;
     }
 }
 
