@@ -26,12 +26,6 @@ export class ViewerComponent implements AfterViewInit {
       // extract config
       this.config = sharedService.configForRoute(res.id);
       this.selectedChapter = this.config && this.config.chapters && this.config.chapters[0] || '';
-      const gist = $('.gist-holder');
-      if (gist) {
-        console.log('located gist element!');
-      } else {
-        console.log('nothing found on route');
-      }
     });
   }
 
@@ -55,12 +49,7 @@ export class ViewerComponent implements AfterViewInit {
   }
 
   ngAfterViewInit () {
-    const gist = $('.gist');
-    if (gist) {
-      console.log('located gist!');
-    } else {
-      console.log('nothing found');
-    }
+
   }
 
 }
