@@ -78,7 +78,9 @@ export class SharedService {
           'custom-rest-template',
           'async-config',
           'scheduling',
-          'caching'
+          'caching',
+          'json-view',
+          'interceptors'
         ] },
         { title: 'Proxying beans with Spring Boot', ref: 'proxies' },
         { title: 'Spring Boot Admin', ref: 'springbootadmin' },
