@@ -68,7 +68,17 @@ export class SharedService {
         { title: 'Spring boot testing', ref: 'testing', chapters: [
           'mocking-beans',
           'testing-json-objects',
-          'testing-rest-controllers'
+          'testing-rest-controllers',
+          'rest-template-mocked-server'
+        ] },
+        { title: 'Spring snippets', ref: 'snippets', chapters: [
+          'mvc-custom-config',
+          'rest-controllers',
+          'jackson',
+          'custom-rest-template',
+          'async-config',
+          'scheduling',
+          'caching'
         ] },
         { title: 'Proxying beans with Spring Boot', ref: 'proxies' },
         { title: 'Spring Boot Admin', ref: 'springbootadmin' },
