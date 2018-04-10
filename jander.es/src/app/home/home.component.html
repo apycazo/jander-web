@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <img alt="Jander.es" src="assets/jander.es.png">
+            <img alt="Jander.es" src="assets/jander.es.png" class="banner">
             <br><br>
             <h2>Code source references</h2>
           </div>
@@ -13,58 +13,44 @@
           <div class="col-lg-12">
               <!-- <app-test></app-test> -->
               <h4 class="text-center about">This site contains reference info on multiple technologies, primarily intended as a personal reference site, 
-                but hopefully useful for anyone!. This page is still a work in progress while I refactor GitLab repositories back into GitHub.<br> To check my current GitHub repositories click on the button below.
+                but hopefully useful for others. The page is still a work in progress while I refactor GitLab repositories back into GitHub.<br> To check my current GitHub repositories click on the button below.
               </h4>
               <a class="btn btn-primary git" href="https://github.com/apycazo?tab=repositories" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i> APycazo at GitHub</a>
           </div>
         </div>
-        <!-- <div class="row content-parent">
-          <div *ngFor="let group of content" class="col-md-4 content">
-            
-            <ul class="list-unstyled">
-                <h4>{{group.text}}</h4>
-                <li *ngFor="let entry of group.pages">
-                  <a routerLink="../doc/{{group.prefix}}{{entry.ref}}">{{entry.title}}</a>
-                </li>
-            </ul>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
 </div>
 
-
+<!-- lists the site content, if the screen is width enough, shows descriptions too -->
 <div class="site-content">
-  <div class="section-title">
-    <div>
-      <span class="section-text">Site content</span>
-    </div>
-  </div>
-  <div class="container">
-    <!-- <h1 class="center">Site content</h1> -->    
-    <div class="row content-block">
-      <div *ngFor="let group of content" class="col-md-4 content">
-        
-        <ul class="list-unstyled">
-            <h4>{{group.text}}</h4>
-            <li *ngFor="let entry of group.pages">
-              <a class="link-without-underline" routerLink="../doc/{{group.prefix}}{{entry.ref}}">{{entry.title}}</a>
-            </li>
-        </ul>
+    <div class="section-title">
+      <div>
+        <span class="section-text">Site content</span>
       </div>
     </div>
-  </div>
+
+    <div *ngFor="let group of content" class="site-content-group">
+        <h4 class="text-center title">{{group.text}}</h4><hr>
+        <div class="container-fluid">
+          <div class="row site-content-entry" *ngFor="let entry of group.pages">              
+            <a class="link-without-underline col-md-5 text-right" routerLink="../doc/{{group.prefix}}{{entry.ref}}">{{entry.title}}</a>
+            <span class="hide-on-small col-md-7 text-left" *ngIf="entry.description">{{entry.description}}</span>
+          </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- makes sure the footer does not hide anything -->
+    <div class="footer-gap"></div>
 </div>
 
-
-<br><br><br>
-
-
+<!-- shows a footer with authorship info and a link to the page sources on github -->
 <div class="home-footer">
   <div>
-    <h5 class="text-left">Andres Picazo - 2018</h5>
-    <h5 class="text-center"><i class="fa fa-lg fa-bell" aria-hidden="true"></i> This page is still a work in-progress!</h5>
-    <h5 class="text-right">All content available under Apache 2.0 license <a class="btn btn-primary btn-sm" href="https://github.com/apycazo/jander-web" target="_blank">here</a></h5>
+    <h5 class="text-left hide-on-small">Andres Picazo - 2018</h5>
+    <h5 class="text-center hide-on-small"><i class="fa fa-lg fa-bell" aria-hidden="true"></i> This page is still a work in-progress!</h5>
+    <h5 class="text-right">Content under Apache 2.0 license <a class="btn btn-primary btn-sm" href="https://github.com/apycazo/jander-web" target="_blank">here</a></h5>
   </div>
 </div>

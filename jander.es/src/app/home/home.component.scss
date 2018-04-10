@@ -1,6 +1,11 @@
 $jumboTextColor: #fff;
 $jumboTextShadowColor: #000;
 $containerHeight: calc(100vh - 101px);
+$contentHeight: calc(100vh - 116px);
+$footerHeight: 50px;
+
+// hides site content panel
+$hideSiteContent: false;
 
 .about {
     
@@ -31,11 +36,11 @@ $containerHeight: calc(100vh - 101px);
 .home-footer {
     position: fixed;
     bottom: 0;
-    height: 50px;
+    height: $footerHeight;
     background-color:#222;
     color: darken(white, 15%);
     border-top: 1px solid white;
-    width: 100%;
+    width: 100vw;
 
     .text-left, .text-center {
         float: left;
@@ -54,6 +59,9 @@ $containerHeight: calc(100vh - 101px);
         color: white;
     }
 }
+
+
+
 
 .jumbotron {
 
@@ -113,11 +121,39 @@ $containerHeight: calc(100vh - 101px);
 
 .site-content {
 
+    @if $hideSiteContent {
+        display: none;
+    }
+
     border-top: 1px solid white;
     margin-top: 1px;
+    min-height: 100vh;
+
+    .site-content-group {
+        
+        background-color: black;
+        padding: 3px;
+
+        .title {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .site-content-entry {
+            text-align: center;
+
+            span {
+                color:white;
+            }
+        }
+    }
 
     .center {
         text-align: center;
+    }
+
+    .row {
+        margin-top: 10px;                
     }
 
     .content-block {
@@ -133,14 +169,21 @@ $containerHeight: calc(100vh - 101px);
             padding: 3px;
         }
     }
+
+    .footer-gap {
+        height: $footerHeight;
+    }
 }
 
+.container.container-small-margins {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 // hide content on small screens
 @media screen and (max-width: 1000px) {
 
     .content-parent {
-
         display: none;
     }
 
@@ -149,15 +192,21 @@ $containerHeight: calc(100vh - 101px);
     }
 }
 
-// for now, just ignore 'about' content
-// .about {
-//     display: none;
-// }
+@media screen and (max-width: 500px) {
+
+    .hide-on-small {
+        display: none;
+    }
+}
 
 @media screen and (max-height: 700px) {
 
     .about {
         display: none;
     }
+
+    .jumbotron .banner {
+        max-width: 80%;
+    }    
 }
 
