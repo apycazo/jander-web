@@ -6,9 +6,15 @@ $footerHeight: 50px;
 
 // hides site content panel
 $hideSiteContent: false;
+// hides the description about the web
+$hideDescription: true;
 
 .about {
     
+    @if $hideDescription {
+        display: none;
+    }
+
     background-color: black;
     padding: 15px;
     border: 2px solid white;

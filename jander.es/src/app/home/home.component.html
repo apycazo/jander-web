@@ -15,7 +15,7 @@
               <h4 class="text-center about">This site contains reference info on multiple technologies, primarily intended as a personal reference site, 
                 but hopefully useful for others. The page is still a work in progress while I refactor GitLab repositories back into GitHub.<br> To check my current GitHub repositories click on the button below.
               </h4>
-              <a class="btn btn-primary git" href="https://github.com/apycazo?tab=repositories" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i> APycazo at GitHub</a>
+              <a class="btn btn-primary git" href="https://github.com/apycazo?tab=repositories" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i> Sources at GitHub</a>
           </div>
         </div>
       </div>
@@ -35,7 +35,9 @@
         <h4 class="text-center title">{{group.text}}</h4><hr>
         <div class="container-fluid">
           <div class="row site-content-entry" *ngFor="let entry of group.pages">              
-            <a class="link-without-underline col-md-5 text-right" routerLink="../doc/{{group.prefix}}{{entry.ref}}">{{entry.title}}</a>
+            <a class="link-without-underline col-md-5 text-right" routerLink="../doc/{{group.prefix}}{{entry.ref}}">
+              <strong>{{entry.title}}</strong>
+            </a>
             <span class="hide-on-small col-md-7 text-left" *ngIf="entry.description">{{entry.description}}</span>
           </div>
         </div>

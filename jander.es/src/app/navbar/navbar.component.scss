@@ -3,6 +3,8 @@ $navbarBackgroundColor: lighten(#101010, 10%);
 $navbarTextColor: #fff;
 $navbarListOverColor: lighten($navbarBackgroundColor, 30%);
 $navbarListTextOverColor: darken(#fff, 10%);
+$logoSize: 160px;
+$logoGap: 180px;
 
 .navbar {
 
@@ -11,8 +13,24 @@ $navbarListTextOverColor: darken(#fff, 10%);
     border-radius: 0px;
     border-bottom: 1px solid $navbarTextColor;
 
-    .navbar-brand {
+    // .navbar-nav {
+    //     width: calc( 100% - #{$logoGap} );
+    //     // width: 80%;
+    //     text-align: center;
+    //     > li {
+    //         float: none;
+    //         display: inline-block;
+    //     }
+    // }
+
+    .navbar-brand.logo {
         padding-top: 10px;
+    }
+
+    .navbar-brand.text {
+        color: white;
+        font-weight: bolder;
+        border-right: 2px solid white;
     }
 
     .dropdown-toggle {
@@ -20,7 +38,7 @@ $navbarListTextOverColor: darken(#fff, 10%);
     }
 
     img {
-        max-width: 160px;
+        max-width: $logoSize;
     }
 
     ul.dropdown-menu {
